@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "580488037810",
+    "firebase_url": "https://suraqjauap-c7d4f.firebaseio.com",
+    "project_id": "suraqjauap-c7d4f",
+    "storage_bucket": "suraqjauap-c7d4f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:580488037810:android:b702266270969bbb7890ab",
+        "android_client_info": {
+          "package_name": "kz.iitu.jauap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "580488037810-asmaor43vcsco6o3viunvrc4k8irditd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmlLch34OT1eHnKTM9h0dkvtTqJDCTC2Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "580488037810-asmaor43vcsco6o3viunvrc4k8irditd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

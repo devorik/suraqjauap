@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingTop="70dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_photo"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Tap too add cover image"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:hintTextAppearance="@style/HintText"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxStrokeColor="@color/blue"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:lines="1"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:hint="Enter title" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:hintTextAppearance="@style/HintText"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxStrokeColor="@color/blue"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/description"
+                        android:layout_width="match_parent"
+                        android:lines="1"
+                        android:layout_height="50dp"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:hint="Enter description"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_bg"
+        android:textAllCaps="false"
+        android:layout_gravity="right"
+        android:textSize="18dp"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:layout_marginBottom="7dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="220dp">
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:elevation="6dp"
+        app:civ_border_width="3dp"
+        android:src="@drawable/ic_man"
+        app:civ_border_color="@color/black"
+        />
+        <LinearLayout
+            android:paddingLeft="30dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+
+                android:textAlignment="textStart"
+                android:id="@+id/name_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                tools:text="Name"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:paddingTop="5dp"
+                android:id="@+id/surname_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                tools:text="Surname"
+                android:textAlignment="textStart"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:paddingTop="5dp"
+                android:textAlignment="textStart"
+                android:id="@+id/email_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                tools:text="Email"
+                android:textSize="14dp"
+                android:textColor="#BDBABA"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

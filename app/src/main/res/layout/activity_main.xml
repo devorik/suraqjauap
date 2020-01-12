@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/new_user_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text="@string/new_user_button_text"
+        android:textAlignment="viewEnd"
+        android:textSize="@dimen/text_size"
+        />
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_group_3"
+        android:contentDescription="@string/cont_desc_logo"
+        android:layout_weight="1"
+        />
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Suraq Jauap"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            />
+        <ImageView
+            android:layout_marginTop="@dimen/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_rectangle_2"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:hintTextAppearance="@style/HintText"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxStrokeColor="@color/blue"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/email_sign_in_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:lines="1"
+                    android:inputType="textEmailAddress"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:hint="Email" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:hintTextAppearance="@style/HintText"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxStrokeColor="@color/blue"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/password_sign_in_edit_text"
+                        android:layout_width="match_parent"
+                        android:lines="1"
+                        android:layout_height="50dp"
+                        android:inputType="textPassword"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:hint="Password"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/forgot_password_button"
+                android:layout_marginTop="@dimen/padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forgot_text"
+                android:textSize="16sp"
+                android:background="?android:attr/selectableItemBackground"
+                android:textColor="#999999"
+                android:textAllCaps="false"
+                android:layout_gravity="right"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button_bg"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        android:text="Sign In"
+        android:textColor="@color/white"
+        android:layout_marginBottom="7dp"
+        />
+
+
+
+
+</LinearLayout>

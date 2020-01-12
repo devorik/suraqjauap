@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_house_black_silhouette_without_door"
+        android:iconTint="#f3ce6b"
+        />
+
+    <item
+        android:id="@+id/create"
+        android:title="Play"
+        android:icon="@drawable/ic_play_button_arrowhead"
+        android:iconTint="#13dc6e"
+        />
+    <item
+        android:id="@+id/leader_board"
+        android:title="Leaderboard"
+        android:icon="@drawable/ic_graph"
+        android:iconTint="#63c4e7"
+        />
+    <item
+        android:id="@+id/notifications"
+        android:title="Notifications"
+        android:icon="@drawable/ic_turn_notifications_on_button"
+        android:iconTint="#ff5e74"
+        />
+    <item
+        android:id="@+id/edit_profile"
+        android:title="Edit Profile"
+        android:icon="@drawable/ic_settings_gears"
+        android:iconTint="#c157f8"
+        />
+
+
+</menu>
